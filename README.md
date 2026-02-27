@@ -40,3 +40,30 @@ true or false
 
 ## string
 use double quotation
+
+## Implicit Vs Explicit
+
+### 
+```
+Println - standard output
+Printf()- Formatted
+```
+
+### %T
+```
+%T - Data type
+%v - value
+%b - binary
+%e - scientific representation
+%f - float representation (e.g fmt.Printf(".2f"), 10.2f)
+%s- string
+%% - To add %
+\" - for quotation 
+```
+
+
+## Sprintf
+creates a string but not print it out
+
+
+## Arithmetic operator
