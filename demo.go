@@ -32,9 +32,44 @@ func main() {
 	fmt.Println((num3))
 
 
-	test := "1E"
+	test := "101"
 	result,err := strconv.ParseInt(test,2,0)
 	fmt.Println(result, err)
+// comparison operator
+	test1 := uint32(8)
+	test2 := test1 == uint32(8)
+	fmt.Println(test2)
+
+// if statement
+testIf := 2
+if testIf < 3 {
+    fmt.Println("run")
+} else if testIf >5 {
+    fmt.Println("jump")
+} else {
+    fmt.Println("sit")
+}
+
+// switch case
+test_switch := 5
+switch  {
+case test_switch < 2:
+	fmt.Println("This is less than 2")
+	fallthrough
+case test_switch < 5 :
+	fmt.Println("This is less than 5")
+	fallthrough
+case test_switch > 3:
+	fmt.Println("This is greater than 3")
+	fallthrough
+case test_switch == 5:
+	fmt.Println("This is five ")
+	
+
+default :
+	fmt.Println("default")
+	
+}
 
 
 }

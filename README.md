@@ -81,6 +81,48 @@ creates a string but not print it out
 ### Convert from string to integer
 - Use `strconv` package
     - .Atoi(): string to integer
-    - .ParseInt()
+    - .ParseInt(value, base, bit_size)
  
+## Conditions
+- A condition is any expression that evaluates to `true` or `false`
+### Comparison Operators
+- <
+- >
+- <=
+- >=
+- ==
+- !=
 
+### Logical Operators
+- || - Or
+- && - And
+- ! - Not
+
+
+### If 
+```
+x:= 2
+if x < 3 {
+    fmt.Println("run")
+} else if x >5 {
+    fmt.Println("jump")
+} else {
+    fmt.Println("sit")
+}
+```
+
+### switch
+```
+a := 1
+switch a {
+    case 1: 
+    fmt.Println("one")
+    case 2:
+    fmt.Println("two")
+    default:
+    fmt.Println("default")
+
+}
+```
+
+to fall through every case, you should type `fallthrough `
