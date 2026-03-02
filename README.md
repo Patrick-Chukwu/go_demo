@@ -80,5 +80,7 @@ creates a string but not print it out
 
 ### Convert from string to integer
 - Use `strconv` package
-    - .Atoi(): string to nter
+    - .Atoi(): string to integer
+    - .ParseInt()
  
+

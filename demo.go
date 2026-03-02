@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
 	var x string = "Hello, pat"
@@ -27,6 +30,11 @@ func main() {
 	num2 := 2
 	num3 := num1 + fmt.Sprint(num2)
 	fmt.Println((num3))
+
+
+	test := "1E"
+	result,err := strconv.ParseInt(test,2,0)
+	fmt.Println(result, err)
 
 
 }
