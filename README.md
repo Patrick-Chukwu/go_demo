@@ -24,6 +24,7 @@ Int can either be positive or negative
 
 ### byte
 A byte is 8 bits.
+- it is uint8 datatype
 It can be used to store a number or character
 type = int8
 use single quotation
@@ -125,4 +126,33 @@ switch a {
 }
 ```
 
-to fall through every case, you should type `fallthrough `
+to fall through every case, you should type `fallthrough`
+    - You can also check for multiple cases
+
+
+### For loop
+
+```
+for inx := 0; idx <10; idx++ {
+    fmt.Println(idx)
+
+}
+```
+- In Go, we don't have access to a `while` loop
+    - To run a while, use a for loop with a single condition
+
+### Looping through strings
+
+```
+str := "hello world"
+
+    - We have index acces, however it gives the values of the integer representation of the character
+    - strings are slices of characters or bytes
+    - you need to convert back to string
+
+
+## ASCII vs UTF-8
+### ASCII 
+1 byte and 256
+
+UTF-8 - 4 byte

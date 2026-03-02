@@ -71,5 +71,8 @@ default :
 	
 }
 
-
+test_string := "Hello patrick"
+for _, char := range test_string {
+	fmt.Printf("%c\n", char)
+}
 }
