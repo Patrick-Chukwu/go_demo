@@ -54,6 +54,7 @@ Printf()- Formatted
 %T - Data type
 %v - value
 %b - binary
+%d - decimal
 %e - scientific representation
 %f - float representation (e.g fmt.Printf(".2f"), 10.2f)
 %s- string
@@ -67,3 +68,17 @@ creates a string but not print it out
 
 
 ## Arithmetic operator
+
+## The math package
+- Min(a,b) (function)
+- Max(a,b)
+- Sqrt(a)
+- Pow(a,b)
+- Round(a)
+- Ceil(a)
+- Floor(a) : round down
+
+### Convert from string to integer
+- Use `strconv` package
+    - .Atoi(): string to nter
+ 

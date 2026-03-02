@@ -23,5 +23,10 @@ func main() {
 	value, ok := mp["b"]
 	fmt.Println(value, ok)
 
+	num1 := "hi"
+	num2 := 2
+	num3 := num1 + fmt.Sprint(num2)
+	fmt.Println((num3))
+
 
 }
