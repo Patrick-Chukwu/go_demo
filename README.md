@@ -145,6 +145,7 @@ for inx := 0; idx <10; idx++ {
 
 ```
 str := "hello world"
+```
 
     - We have index acces, however it gives the values of the integer representation of the character
     - strings are slices of characters or bytes
@@ -156,3 +157,25 @@ str := "hello world"
 1 byte and 256
 
 UTF-8 - 4 byte
+
+## Array
+Array are a fixed sized data structure that can store values of the same type.
+- The type of array indicates its size
+- Once we initialize an array the size cannot be changed
+- set the value with {} not ()
+- `array literal` is writing the values of the array upon declaration
+- using [...] allows the compiler automatically count the value in our array literal
+```
+var arr [2]int
+var arr [3]int{1 3 4}
+arr1 := [2]int{4 6}
+```
+
+### Properties of array
+- Index values can be accessed
+- It can be mutated
+- Length can be calculated
+- You can't change the size
+- You change the
+
+## Slices

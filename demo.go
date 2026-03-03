@@ -51,7 +51,7 @@ if testIf < 3 {
 }
 
 // switch case
-test_switch := 5
+test_switch := 8
 switch  {
 case test_switch < 2:
 	fmt.Println("This is less than 2")
@@ -59,12 +59,11 @@ case test_switch < 2:
 case test_switch < 5 :
 	fmt.Println("This is less than 5")
 	fallthrough
-case test_switch > 3:
+case test_switch > 3 && test_switch < 5:
 	fmt.Println("This is greater than 3")
 	fallthrough
 case test_switch == 5:
 	fmt.Println("This is five ")
-	
 
 default :
 	fmt.Println("default")
@@ -75,4 +74,21 @@ test_string := "Hello patrick"
 for _, char := range test_string {
 	fmt.Printf("%c\n", char)
 }
+
+// while loop
+test_while := 5
+for test_while < 10 {
+	fmt.Println("While loop")
+	test_while++
 }
+
+array := [2][2]int{{2 ,3},{4, 5}}
+fmt.Printf("%T\n", array)
+for _, value := range array {
+	// fmt.Println(i,value)
+	for i, details := range value {
+		fmt.Println( i,details)
+	}
+}
+
+}   
