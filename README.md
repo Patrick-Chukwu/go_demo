@@ -1,5 +1,10 @@
 # Summary
 
+## Package
+a package is a way to group functions, and it's made up of all the files in the same directory
+
+### fmt package
+The `fmt` package contains functions for formatting text, including printing to the console. It is one of the standard library packages you get upon installing go
 ## Binary
 range of bit: (256)
 Max:  2^8 - 1
@@ -120,7 +125,7 @@ switch a {
     fmt.Println("one")
     case 2:
     fmt.Println("two")
-    default:
+    default:a package is a way to group functions, and it's made up of all the files in the same directory
     fmt.Println("default")
 
 }
@@ -128,7 +133,7 @@ switch a {
 
 to fall through every case, you should type `fallthrough`
     - You can also check for multiple cases
-
+a package is a way to group functions, and it's made up of all the files in the same directory
 
 ### For loop
 
@@ -136,7 +141,7 @@ to fall through every case, you should type `fallthrough`
 for inx := 0; idx <10; idx++ {
     fmt.Println(idx)
 
-}
+}a package is a way to group functions, and it's made up of all the files in the same directory
 ```
 - In Go, we don't have access to a `while` loop
     - To run a while, use a for loop with a single condition
