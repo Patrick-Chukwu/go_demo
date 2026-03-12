@@ -91,4 +91,14 @@ for _, value := range array {
 	}
 }
 
+array2 := [...][3]int{{3, 2, 1},{4, 5, 6},{5,6,7}}
+fmt.Println(array2)
+sl := array2[1:]
+// sl[0] = [1, 0, 0]
+fmt.Println(sl)
+fmt.Println(sl[0])
+// sl[0] = []int{3,5,8}
+fmt.Println(sl[0])
+
+
 }   

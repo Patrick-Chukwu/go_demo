@@ -88,6 +88,7 @@ creates a string but not print it out
 - Use `strconv` package
     - .Atoi(): string to integer
     - .ParseInt(value, base, bit_size)
+    - Atoi() is the same as Parseint(value, 10, 0)
  
 ## Conditions
 - A condition is any expression that evaluates to `true` or `false`
@@ -184,3 +185,10 @@ arr1 := [2]int{4 6}
 - You change the
 
 ## Slices
+- A slice is a more flexible type of array 
+- it is a view of an array that allows increase or decrease the capacity
+```
+arr := [5]int{1,2,3,4,5}
+sl := arr[:]
+fmt.Println(sl[0])
+``` 
