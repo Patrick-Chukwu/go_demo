@@ -5,6 +5,17 @@ a package is a way to group functions, and it's made up of all the files in the 
 
 ### fmt package
 The `fmt` package contains functions for formatting text, including printing to the console. It is one of the standard library packages you get upon installing go
+
+## 
+- bool
+- string 
+- int int8 int16 int32 int64
+- uint uint8 uint16 uint32 uint64 uintptr
+- byte // alias for uint8
+- rune // alias for int32 
+        //represents a unicode code point
+- float32 float64
+- complex64 complex128
 ## Binary
 range of bit: (256)
 Max:  2^8 - 1
@@ -192,3 +203,37 @@ arr := [5]int{1,2,3,4,5}
 sl := arr[:]
 fmt.Println(sl[0])
 ``` 
+## Functions in Go
+Functions in Go can take zero or more arguments.
+- the variable type comes after the variable name.
+
+
+## Structs
+We use structs in Go to represent structured data. It's often convenient to group different types of variables together
+- For example, for cars, we can have:
+```
+type car struct {
+    Make string
+    Model string
+    Height int
+    Width int
+
+    FrontWheel Wheel
+    BackWheel Wheel
+}
+
+type Wheel struct {
+    Radius int
+    Material string
+}
+
+```
+to access it:
+```
+myCar := car{}
+myCar.FrontWheel.Radius = 5
+
+```
+
+## Method
+ Methods are just functions that have a receiver. A receiver is a special parameter that syntactically goes before the name of the function.
